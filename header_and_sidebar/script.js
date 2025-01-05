@@ -3,6 +3,7 @@ const nameWrapper = document.querySelector('.nameWrapper');
 const profilePopupWrapper = document.querySelector('.menuWrapper');
 const userArrowIcon = document.querySelector('.userArrowIcon');
 const primaryNavItems = document.querySelectorAll('.primaryNav');
+const sidebarLinks = document.querySelectorAll('.groupWrapper a');
 const sidebar = document.querySelector('.sidebar');
 const backdrop = document.querySelector('.backdrop');
 const closeResponsive = document.querySelector('.close');
@@ -70,11 +71,15 @@ const handleActiveClassnames = (parent, handle = 'remove') => {
 
 // handling click on sidebar primary nav items
 primaryNavItems.forEach((item) => item.addEventListener('click', (e) => {
-    primaryNavItems.forEach((itemS) => {
-        handleActiveClassnames(itemS)
-    })
+    if (item.classList.contains('activePrimaryNav')) {
+        handleActiveClassnames(item)
+    } else {
+        primaryNavItems.forEach((itemS) => {
+            handleActiveClassnames(itemS)
+        })
 
-    handleActiveClassnames(e.currentTarget, 'add')
+        handleActiveClassnames(e.currentTarget, 'add')
+    }
 }))
 
 // closing sidebar by clicking backdrop in responsive
@@ -89,5 +94,12 @@ closeResponsive.addEventListener('click', (e) => {
     sidebar.classList.remove('openSidebar');
     backdrop.classList.remove('backdropActive');
     burgerButton.classList.remove('openBurgerButton');
+})
+
+// TODO: detecting active links when page refresh or link click happens, after routing and defining exact links addresses, we can add or remove active classnames for relevant tags
+sidebarLinks.forEach(link => {
+    if (link.pathname === location.pathname) {
+        console.log(link)
+    }
 })
 
