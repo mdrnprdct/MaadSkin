@@ -1,3 +1,13 @@
+@font-face {
+    font-family: vazir;
+    src: url(../fonts/vazir/Vazir.woff);
+}
+
+@font-face {
+    font-family: vazirBold;
+    src: url(../fonts/vazir/Vazir-Bold.woff);
+}
+
 .authLayout {
     display: flex;
     flex-direction: column;
@@ -7,6 +17,7 @@
     box-sizing: border-box;
     padding: 0 40px;
     direction: rtl;
+    font-family: vazir, Roboto, sans-serif;
 }
 
 .contentWrapper {
@@ -38,7 +49,7 @@
 .companyTitle, .companyDescription {
     position: absolute;
     right: 50px;
-    font-weight: 800;
+    font-family: vazirBold, Roboto, sans-serif;
     color: white;
 }
 
@@ -71,7 +82,7 @@
 
 h2 {
     font-size: 40px;
-    font-weight: 700;
+    font-family: vazirBold, Roboto, sans-serif;
     color: #4A4543
 }
 
@@ -209,7 +220,7 @@ input {
     }
 
     .wallpaperTitle {
-        font-weight: 800;
+        font-family: vazirBold, Roboto, sans-serif;
         font-size: 30px
     }
 
