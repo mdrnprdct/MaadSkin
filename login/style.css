@@ -123,6 +123,8 @@ input {
     color: #3E6487;
 }
 
+/*responsive*/
+/*tablet*/
 @media only screen and (max-width: 1024px) {
     .authLayout {
         padding: 24px;
@@ -154,6 +156,7 @@ input {
     }
 }
 
+/*mobile*/
 @media only screen and (max-width: 600px) {
     .authLayout {
         padding: 16px 24px;
