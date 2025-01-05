@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Header and Sidebar</title>
+    <link href="style.css" rel="stylesheet"/>
+    <link href="../resets.css" rel="stylesheet"/>
+<!--    I use fontAwsome for loading icons you can replace your way for loading and delete this-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<main class="panelLayout">
+    <!--    sidebar-->
+    <aside class="sidebar">
+        <section class="primarySidebar">
+            <nav class="nav">
+                <div class="close">
+                    <i class='fa fa-close closeIcon'></i>
+                </div>
+
+                <img class="logo" src="./images/logo.svg" alt="Maadiran Logo">
+
+                <ul class="groupWrapper">
+                    <!--                    menu item that has secondary menu-->
+                    <li class="groupItem">
+                        <div class='primaryNav'>
+                            <i class='fa fa-gear navIcon'></i>
+                            <h3 class='title'>مدیریت سایت</h3>
+                            <i class='fa fa-angle-up arrowIcon'></i>
+                        </div>
+
+                        <ul class="secondaryNav">
+                            <li class="secondaryGroupItem">
+                                <a class="link" href="">
+                                    <h3 class='secondaryTitle'>تنظیم وظیفه به کاربر</h3>
+                                </a>
+                            </li>
+                            <li class="secondaryGroupItem">
+                                <a class="link" href="">
+                                    <h3 class='secondaryTitle'>افزودن وظیفه</h3>
+                                </a>
+                            </li>
+                            <li class="secondaryGroupItem">
+                                <a class="link" href="">
+                                    <h3 class='secondaryTitle'>لیست کاربران جدید</h3>
+                                </a>
+                            </li>
+                            <li class="secondaryGroupItem">
+                                <a class="link" href="">
+                                    <h3 class='secondaryTitle'>مدیریت طرح‌های فروش</h3>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="groupItem">
+                        <div class='primaryNav'>
+                            <i class='fa fa-hashtag navIcon'></i>
+                            <h3 class='title'>گزارشات</h3>
+                            <i class='fa fa-angle-up arrowIcon'></i>
+                        </div>
+
+                        <ul class="secondaryNav">
+                            <li class="secondaryGroupItem">
+                                <a class="link" href="">
+                                    <h3 class='secondaryTitle'>گزارش تراکنش</h3>
+                                </a>
+                            </li>
+                            <li class="secondaryGroupItem">
+                                <a class="link" href="">
+                                    <h3 class='secondaryTitle'>گزارش حسابرسی</h3>
+                                </a>
+                            </li>
+                            <li class="secondaryGroupItem">
+                                <a class="link" href="">
+                                    <h3 class='secondaryTitle'>گزارش فروش نمایندگان</h3>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!--                    menu item without secondary menu-->
+                    <li class="groupItem">
+                        <a href="" class='primaryNav'>
+                            <i class='fa fa-plus navIcon'></i>
+                            <h3 class='title'>سفارش جدید</h3>
+                        </a>
+                    </li>
+
+                    <li class="groupItem">
+                        <div class='primaryNav'>
+                            <i class='fa fa-user navIcon'></i>
+                            <h3 class='title'>مشتریان</h3>
+                            <i class='fa fa-angle-up arrowIcon'></i>
+                        </div>
+
+                        <ul class="secondaryNav">
+                            <li class="secondaryGroupItem">
+                                <a class="link" href="">
+                                    <h3 class='secondaryTitle'>ثبت مشتری</h3>
+                                </a>
+                            </li>
+                            <li class="secondaryGroupItem">
+                                <a class="link" href="">
+                                    <h3 class='secondaryTitle'>لیست مشتریان</h3>
+                                </a>
+                            </li>
+                            <li class="secondaryGroupItem">
+                                <a class="link" href="">
+                                    <h3 class='secondaryTitle'>گزارش مشتریان</h3>
+                                </a>
+                            </li>
+                            <li class="secondaryGroupItem">
+                                <a class="link" href="">
+                                    <h3 class='secondaryTitle'>شارژ کیف پول</h3>
+                                </a>
+                            </li>
+                            <li class="secondaryGroupItem">
+                                <a class="link" href="">
+                                    <h3 class='secondaryTitle'>ویرایش مشتری</h3>
+                                </a>
+                            </li>
+                            <li class="secondaryGroupItem">
+                                <a class="link" href="">
+                                    <h3 class='secondaryTitle'>ریست رمز نماینده</h3>
+                                </a>
+                            </li>
+                            <li class="secondaryGroupItem">
+                                <a class="link" href="">
+                                    <h3 class='secondaryTitle'>اعتبار سنجی مشتریان</h3>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="groupItem">
+                        <a href="" class='primaryNav'>
+                            <i class='fa fa-plus navIcon'></i>
+                            <h3 class='title'>گزارشات</h3>
+                        </a>
+                    </li>
+
+                    <!--                    place your rest of menu items here-->
+                </ul>
+            </nav>
+        </section>
+    </aside>
+
+    <!--    header and container-->
+    <div class="wrapper">
+        <header class="header">
+            <!--        burger button-->
+            <div class="headerContainer">
+                <button class='burgerButton'>
+                    <span class='burgerButtonItem burgerButtonOne'></span>
+                    <span class='burgerButtonItem burgerButtonTwo'></span>
+                    <span class='burgerButtonItem burgerButtonThree'></span>
+                </button>
+
+                <!--            profile popup-->
+                <div class='profile'>
+                    <i class='fa fa-bell notificationIcon'></i>
+
+                    <div class='nameWrapper'>
+                        <span class='username'>username</span>
+                        <i class='fa fa-angle-up userArrowIcon'></i>
+                    </div>
+
+                    <ul class='menuWrapper'>
+                        <li class='menuItem'>
+                            پیام‌ها
+                        </li>
+                        <li class='menuItem'>
+                            تغییر رمز عبور
+                        </li>
+                        <li class='menuItem'>
+                            خروج
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!--        Your content place here-->
+        <div class="container">
+            <h1>Your Page Content Place Here</h1>
+        </div>
+    </div>
+
+    <!--    backdrop-->
+    <div class="backdrop">
+
+    </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

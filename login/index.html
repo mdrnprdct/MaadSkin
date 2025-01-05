@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Page</title>
+    <link href="style.css" rel="stylesheet"/>
+    <link href="../resets.css" rel="stylesheet"/>
+</head>
+<body>
+<main class="authLayout">
+    <div class="contentWrapper">
+        <!--        banner-->
+        <aside class="banner">
+            <div
+                    class='wallpaper'
+                    style='background: #125593'
+            >
+                <h3>پیش ما اعتبار دارید</h3>
+                <span class="wallpaperSubtitle">خرید اعتباری از مادیران</span>
+            </div>
+            <img class="bannerImage" src='images/Maadiran-credite-1.jpg' alt='Madiran Credit Banner'/>
+        </aside>
+
+        <!--        form-->
+        <section class='loginPage'>
+            <div class='content'>
+                <h2>خوش آمدید!</h2>
+                <span class="subtitle">لطفا اطلاعات خود را وارد کنید.</span>
+            </div>
+            <form action="">
+                <div class="fieldWrapper">
+                    <label for="username">نام کاربری</label>
+                    <input type="text" placeholder="نام کاربری" id="username" name="username">
+                </div>
+
+                <div class="fieldWrapper">
+                    <label for="password">رمز عبور</label>
+                    <input type="password" placeholder="رمز عبور" id="password" name="password">
+                </div>
+
+                <div class="help">
+                    <div class="remember">
+                        <input type="checkbox" id="checkbox" name="checkbox">
+                        <label for="checkbox">مرا به خاطر بسپار</label>
+                    </div>
+
+                    <span class="forget">فراموشی رمز</span>
+                </div>
+
+                <button class="submit" >ورود</button>
+            </form>
+        </section>
+    </div>
+
+    <!--      footer-->
+    <footer class="footer">
+        <ul class='footerList'>
+            <li class="footerItem">
+                <a target="_blank" href="">درباره ما</a>
+            </li>
+            <li class="footerItem">
+                <a target="_blank" href="">تماس با ما</a>
+            </li>
+            <li class="footerItem">
+                <a target="_blank" href="">قوانین و مقررات</a>
+            </li>
+            <li class="footerItem">
+                <a target="_blank" href="">راهنمای ثبت نام</a>
+            </li>
+            <li class="footerItem">
+                <a target="_blank" href="">شرایط تحویل</a>
+            </li>
+            <li class="footerItem">
+                <a target="_blank" href="">شرایط بازگشت کالا</a>
+            </li>
+            <li class="footerItem">
+                <a target="_blank" href="">شرایط استفاده</a>
+            </li>
+        </ul>
+    </footer>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
