@@ -1,0 +1,238 @@
+@font-face {
+    font-family: vazir;
+    src: url(../fonts/vazir/Vazir.woff);
+}
+
+@font-face {
+    font-family: vazirBold;
+    src: url(../fonts/vazir/Vazir-Bold.woff);
+}
+
+.authLayout {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 0 40px;
+    direction: rtl;
+    font-family: vazir, Roboto, sans-serif;
+}
+
+.contentWrapper {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    height: 95vh;
+    gap: 85px;
+    width: 100%;
+    grid-template-areas: "b b a a a";
+}
+
+/*banner*/
+.banner {
+    height: 744px;
+    grid-area: a;
+    border-radius: 24px;
+    background-color: #125593;
+    position: relative;
+}
+
+.bannerImage {
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+    object-fit: cover;
+}
+
+.companyTitle, .companyDescription {
+    position: absolute;
+    right: 50px;
+    font-family: vazirBold, Roboto, sans-serif;
+    color: white;
+}
+
+.companyTitle {
+    font-size: 54px;
+    top: 40px;
+}
+
+.companyDescription {
+    font-size: 40px;
+    top: 130px;
+}
+
+.wallpaper {
+    display: none
+}
+
+/*form*/
+.aboutUsPage {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    grid-area: b
+}
+
+h2 {
+    font-size: 40px;
+    font-family: vazirBold, Roboto, sans-serif;
+    color: #125593;
+    align-self: center;
+}
+
+.content {
+    max-height: 560px;
+    overflow-y: scroll;
+    direction: ltr;
+    padding: 5px 10px;
+}
+
+.text {
+    direction: rtl;
+}
+
+::-webkit-scrollbar {
+    background: transparent;
+    width: .4rem;
+    height: .4rem
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.51);;
+    border-radius: 12px
+}
+
+::-webkit-scrollbar-track {
+    background-color: #D9D9D9;
+    border-radius: 12px
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #808080
+}
+
+.text {
+    font-size: 15px;
+    color: #4A4543;
+}
+
+/*footer*/
+.footer {
+    align-self: center;
+    justify-self: end;
+    margin-bottom: 28px;
+}
+
+.footerList {
+    display: flex;
+    gap: 30px;
+}
+
+.footerItem {
+    font-size: 16px;
+    color: #3E6487;
+}
+
+/*responsive*/
+/*tablet*/
+@media only screen and (max-width: 1024px) {
+    .authLayout {
+        padding: 24px;
+        height: unset;
+        gap: 120px;
+    }
+
+    .contentWrapper {
+        display: flex;
+        height: unset;
+        flex-direction: column;
+        gap: 70px;
+    }
+
+    .banner {
+        width: 100%;
+        height: 500px
+    }
+
+    .loginPage {
+        width: 70%
+    }
+
+    .footerList {
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+/*mobile*/
+@media only screen and (max-width: 600px) {
+    .authLayout {
+        padding: 16px 24px;
+        gap: 35px;
+    }
+
+    .contentWrapper {
+        gap: 40px
+    }
+
+    .banner {
+        width: 100%;
+        height: 180px
+    }
+
+    .bannerImage, .companyTitle, .companyDescription {
+        display: none;
+    }
+
+    .wallpaper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        border-radius: 24px;
+        color: white;
+        font-size: 32px;
+    }
+
+    .wallpaperTitle {
+        font-family: vazirBold, Roboto, sans-serif;
+        font-size: 30px
+    }
+
+    .loginPage {
+        width: 90%
+    }
+
+    h2 {
+        font-size: 24px
+    }
+
+    .wallpaperSubtitle {
+        font-size: 14px
+    }
+
+    .forget {
+        font-size: 14px
+    }
+
+    .footer {
+        margin-bottom: 0
+    }
+
+    .footerList {
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .footerItem {
+        font-size: 12px
+    }
+}

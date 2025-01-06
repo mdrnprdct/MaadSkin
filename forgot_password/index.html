@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login Page</title>
+    <title>Forgot Password Page</title>
     <link href="style.css" rel="stylesheet"/>
     <link href="../resets.css" rel="stylesheet"/>
 </head>
@@ -27,9 +27,9 @@
         </aside>
 
         <!--        form-->
-        <section class='loginPage'>
+        <section class='forgotPage'>
             <div class='content'>
-                <h2>خوش آمدید!</h2>
+                <h2>فراموشی رمز</h2>
                 <span class="subtitle">لطفا اطلاعات خود را وارد کنید.</span>
             </div>
             <form action="">
@@ -39,19 +39,15 @@
                 </div>
 
                 <div class="fieldWrapper">
-                    <label for="password">رمز عبور</label>
-                    <input type="password" placeholder="رمز عبور خود را وارد کنید." id="password" name="password">
+                    <label for="mobile">شماره تلفن</label>
+                    <input type="mobile" placeholder="شماره تلفن خود را وارد کنید." id="mobile" name="mobile">
                 </div>
 
                 <div class="help">
-                    <div class="remember">
-                        <input type="checkbox" id="checkbox" name="checkbox">
-                        <label for="checkbox">مرا به خاطر بسپار</label>
-                    </div>
-                    <a class="forget" href="../forgot_password">فراموشی رمز</a>
+                    <a class="login" href="../login">بازگشت به صفحه ورود</a>
                 </div>
 
-                <button class="submit" >ورود</button>
+                <button class="submit" >ثبت</button>
             </form>
         </section>
     </div>
