@@ -1,13 +1,3 @@
-@font-face {
-    font-family: vazir;
-    src: url(../fonts/vazir/Vazir.woff);
-}
-
-@font-face {
-    font-family: vazirBold;
-    src: url(../fonts/vazir/Vazir-Bold.woff);
-}
-
 body {
  direction: rtl;
 }
@@ -18,7 +8,6 @@ body {
     gap: 0;
     direction: rtl;
     flex-grow: 1;
-    font-family: vazir, Roboto, sans-serif;
 }
 
 /*sidebar styles starts here*/
@@ -51,6 +40,21 @@ body {
     flex-direction: column;
     gap: 80px;
     width: 250px;
+    overflow-y: auto;
+}
+
+.nav::-webkit-scrollbar {
+    background: transparent;
+    width: 0;
+    height: 0;
+}
+
+.nav::-webkit-scrollbar-thumb {
+    background: transparent
+}
+
+.nav::-webkit-scrollbar-track {
+    background-color: transparent
 }
 
 .close {
@@ -114,7 +118,6 @@ body {
 .title {
     font-size: 15px;
     color: white;
-    font-family: vazirBold, Roboto, sans-serif;
     transition: color 0.3s ease-in-out
 }
 
@@ -146,18 +149,18 @@ body {
     transform: rotateZ(-180deg)
 }
 
-::-webkit-scrollbar {
+.secondaryNav::-webkit-scrollbar {
     background: transparent;
     width: .6rem;
     height: .6rem
 }
 
-::-webkit-scrollbar-thumb {
+.secondaryNav::-webkit-scrollbar-thumb {
     background: #ADB5BD;
     border-radius: 12px
 }
 
-::-webkit-scrollbar-track {
+.secondaryNav::-webkit-scrollbar-track {
     background-color: transparent;
     border-radius: 12px
 }
@@ -174,7 +177,6 @@ body {
 
 .secondaryTitle {
     font-size: 14px;
-    font-family: vazirBold, Roboto, sans-serif;
 }
 /*sidebar styles ends here*/
 
@@ -286,7 +288,6 @@ body {
 
 .username {
     font-size: 20px;
-    font-family: vazirBold, Roboto, sans-serif;
 }
 
 .userArrowIcon {
@@ -321,7 +322,7 @@ body {
     flex-direction: column;
 }
 
-.container {
+.layoutContainer {
     max-width: unset;
     width: 100%;
     padding: 0 150px;
@@ -358,7 +359,7 @@ body {
         margin-inline-start: 0
     }
 
-    .container {
+    .layoutContainer {
         padding: 0 69px
     }
 
@@ -391,7 +392,7 @@ body {
         padding: 12px 16px
     }
 
-    .container {
+    .layoutContainer {
         padding: 0 22px
     }
 
@@ -443,5 +444,9 @@ body {
     .closeIcon {
         color: #125593;
         font-size: 20px !important;
+    }
+
+    .backdropActive {
+        display: none;
     }
 }
