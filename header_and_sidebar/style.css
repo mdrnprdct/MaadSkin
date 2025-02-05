@@ -384,6 +384,10 @@ body {
         right: 0;
         z-index: 1202
     }
+
+    body:has(.openSidebar) {
+        overflow: hidden;
+    }
 }
 
 /*mobile*/
@@ -439,6 +443,7 @@ body {
         background-color: white;
         border-radius: 5px;
         cursor: pointer;
+        z-index: 1000;
     }
 
     .closeIcon {

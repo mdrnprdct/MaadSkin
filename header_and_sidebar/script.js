@@ -20,6 +20,7 @@ burgerButton.addEventListener('click', (e) => {
     burgerButton.classList.add('openBurgerButton');
     sidebar.classList.add('openSidebar');
     backdrop.classList.add('backdropActive');
+    window.scrollTo(0, 0);
 })
 
 // handling user profile popup
@@ -91,6 +92,7 @@ backdrop.addEventListener('click', (e) => {
 
 // closing sidebar in responsive
 closeResponsive.addEventListener('click', (e) => {
+    e.stopPropagation()
     sidebar.classList.remove('openSidebar');
     backdrop.classList.remove('backdropActive');
     burgerButton.classList.remove('openBurgerButton');
